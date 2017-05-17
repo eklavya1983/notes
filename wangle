@@ -1,0 +1,14 @@
+Pipeline
+Pipeline is made up of handler.  Each handler can be inbound, outbound or both.  Inbound handlers are invoked in sequence for upstream.  Outbound handlers are invoked in sequence for downstream.
+StringCodec is a good example of a handler that is both inbound as well as outbound.
+
+
+Handler
+HandleBase is the base class that knows about pipeline and Context
+Handler interface provides read/write interfaces
+InboundHandler needs to provide read functionality
+OutboundHandler needs to provide write functionality
+HandlerAdapter is a Handler that just forwards reads/writes down the pipeline by just invoking fireRead/fireWrite on the context.
+
+
+
