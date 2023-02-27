@@ -1,0 +1,10 @@
+# Files and directories to ignore when building Docker image
+node_modules
+build
+*.log
+*.swp
+.DS_Store
+.env
+.git
+.gitignore
+README.md
